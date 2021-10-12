@@ -1,5 +1,5 @@
 import unittest
-from main import login
+from auth import login
 
 
 class TestIdentify(unittest.TestCase):

@@ -1,6 +1,6 @@
 from auth import login, identify
-from supply import supplyChoice
-from demand import demandChoice
+from supply import supply_choice
+from demand import demand_choice
 
 
 if __name__ == '__main__':
@@ -12,8 +12,8 @@ if __name__ == '__main__':
         print("登入成功")
         identify = identify(username)
         if identify == 'supply':
-            supplyChoice()
+            supply_choice()
         elif identify == 'demand':
-            demandChoice()
+            demand_choice()
     else:
         print("登入失敗")

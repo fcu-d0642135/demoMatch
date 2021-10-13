@@ -1,12 +1,14 @@
-def supplyChoice():
+def supply_choice():
+    # raise Exception('Error: object "supply_choice" not found')
+
     choices = {
         '0': {
             'name': '設定媒合需求',
-            'func': setMatchRequirements,
+            'func': set_match_requirements,
         },
         '1': {
             'name': '查詢媒合結果',
-            'func': selectMatchResult,
+            'func': select_match_result,
         }
     }
 
@@ -16,9 +18,12 @@ def supplyChoice():
     choices[choice]['func']()
 
 
-def setMatchRequirements():
-    pass
+def set_match_requirements():
+    position = input('請輸入欲招募的職位')
+    number = input('請輸入欲招募的人數')
+    num_limit = input('請輸入媒合人數上限')
+    return {'position': position, 'number': number, 'num_limit': num_limit}
 
 
-def selectMatchResult():
+def select_match_result():
     pass

@@ -1,12 +1,12 @@
-def demandChoice():
+def demand_choice():
     choices = {
         '0': {
             'name': '設定求職需求',
-            'func': setJobHunting,
+            'func': set_job_hunting,
         },
         '1': {
             'name': '查詢求職結果',
-            'func': selectJobHunting,
+            'func': select_job_hunting,
         }
     }
 
@@ -16,9 +16,9 @@ def demandChoice():
     choices[choice]['func']()
 
 
-def setJobHunting():
+def set_job_hunting():
     pass
 
 
-def selectJobHunting():
+def select_job_hunting():
     pass

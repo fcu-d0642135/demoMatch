@@ -5,3 +5,7 @@ venv/
 
 # sercret file
 data.py
+
+# coverage
+.coverage
+htmlcov/
